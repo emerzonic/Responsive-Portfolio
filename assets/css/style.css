@@ -13,6 +13,11 @@ body{
     padding-bottom: 70px;    
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/* navigation styles */
  ul {
     list-style-type: none;
     margin: 0;
@@ -116,6 +121,8 @@ hr {
     margin-left:0; 
 }
 
+/* sidebar styles */
+
 .sidebar{
     width: 30.1%;
     float:left;
@@ -170,8 +177,8 @@ span{
 /******************************************/
 /******* index/about page content ********/
 #profilePhoto{
-    height: 200px;
-    width: 180px;
+    height:auto;
+    max-width: 555px;
     float: left;
     margin: 30px 30px 15px 30px;
     border-radius: 3px;
@@ -312,34 +319,96 @@ button:hover{
     100% {background-color: green;}
 }
 
-/* Media Queries */
+/************ Media Queries *******************/
+/* ****************************************** */
 
+/* for screens at 980 maximum width */
 @media screen and (max-width:980px) {
-    #profilePhoto{height:auto; width:85%; margin: 25px 30px 25px 30px;border-radius: 3px;}
-    #name{float:left; margin: 0 200px 0 15px;}
-    li a{padding: 0 10px; margin-top: 35px;}
-    .container{ width:98%; margin: 10px auto;}
-    .mainContent{width:60%; float:left; margin: 10px auto;}
-    .sidebar{width:35%; float:left; margin: 10px 0 0 25px;}
-    .sidebar h3{font-size:125%;}
-    .projectImage{height:300px;width:90%; margin:2.5% 5%;}
-    .projectTitle{ margin-top: 225px;
+    #profilePhoto{
+        height:auto;
+         width:85%; 
+        margin: 25px 30px 25px 30px;
+        border-radius: 3px;}
+    #name{
+        float:left; 
+        margin: 0 200px 0 15px;
+    }
+    li a{
+        padding: 0 10px;
+         margin-top: 35px;
+    }
+    .container{ 
+        width:98%; 
+        margin: 10px auto;
+    }
+    .mainContent{
+        width:60%; 
+        float:left;
+         margin: 10px auto;
+    }
+    .sidebar{
+        width:35%; 
+        float:left;
+         margin: 10px 0 0 25px;}
+
+    .sidebar h3{
+        font-size:125%;}
+    .projectImage{
+        height:300px;width:90%; 
+        margin:2.5% 5%;
+    }
+    .projectTitle{ 
+        margin-top: 225px;
     } 
  
+
 }
 
-
+/* for screens at 768 maximum width */
 @media screen and (max-width: 768px) {
-    #name{ float:left; margin:0 80px 0 25px; font-size:150%;}
-    li a{ margin-top: 35px; float:right;}
-    #contactLink{margin-right:0;}
-    .container{ width:92%; margin: 10px auto;}
-    .mainContent{width:100%; float:left; margin: 10px auto;}
-    #profilePhoto{float:left; height:250px; width:325px; margin: 20px; border-radius: 3px;}
-    .mainContent p{margin: 20px 20px;}
-    .sidebar{width:100%; float:left; margin: 10px auto;}
-    .projectImage{height:200px;width:46%; margin:2%;}
-    .projectTitle{height: 4px;
+    #name{ 
+        float:left; 
+        margin:0 80px 0 25px; 
+        font-size:150%;
+    }
+    li a{ 
+        margin-top: 35px; 
+        float:right;
+    }
+    #contactLink{
+        margin-right:0;
+    }
+    .container{ 
+        width:92%; 
+        margin: 10px auto;
+    }
+    .mainContent{width:100%; 
+        float:left; 
+        margin: 10px auto;
+    }
+    #profilePhoto{
+        float:left; 
+        height:250px; 
+        width:325px; 
+        margin: 20px; 
+        border-radius: 3px;
+    }
+    .mainContent p{
+        margin: 20px 20px;
+    }
+    .sidebar{
+        width:100%; 
+        float:left; 
+        margin: 10px auto;
+    
+    }
+    .projectImage{
+        height:200px;
+        width:46%; 
+        margin:2%;
+    }
+    .projectTitle{
+        height: 4px;
         padding-top: 20px;
         padding-bottom: 35px;
         margin-top: 125px;
@@ -348,21 +417,56 @@ button:hover{
     .fa-stack-overflow{
         width:60px;
         height:60px;
-        font-size: 60px;} 
+        font-size: 60px;
+    } 
 
 }
 
-@media screen and (max-width:640px) {
-    #name{ width:100%; margin:0;padding: 0;}
-    li {margin-bottom: 15px;}
-    li a{padding: 0 30px;}
-    .rightNav{ float:none; clear:left;display:block;text-align: center;}
-    #profilePhoto{height:auto; width:92%; margin: 20px 3%; border-radius: 3px;}
-    .container{ width:92%; margin: 10px auto;}
-    .mainContent{width:100%; float:left; margin: 10px auto;}
-    .sidebar{width:100%; float:left; margin: 10px auto;} 
-    .projectImage{height:250px;width:90%; margin:2.5% 5%;}
-    .projectTitle{height: 4px;
+/* for screens at 640 maximum width */
+@media screen and (max-width:640px){
+    #name{ 
+        width:100%; 
+        margin:0;padding: 0;
+    }
+    li {
+        margin-bottom: 15px;
+    }
+    li a{
+        padding: 0 30px;
+    }
+    .rightNav{ 
+        float:none; 
+        clear:left;display:block;
+        text-align: center;
+    
+    }
+    #profilePhoto{
+        height:auto; 
+        width:92%; 
+        margin: 20px 3%; 
+        border-radius: 3px;
+    }
+    .container{ 
+        width:92%; 
+        margin: 10px auto;
+    }
+    .mainContent{
+        width:100%; 
+        float:left; 
+        margin: 10px auto;
+    }
+    .sidebar{
+        width:100%; 
+        float:left; 
+        margin: 10px auto;
+    } 
+    .projectImage{
+        height:250px;
+        width:90%; 
+        margin:2.5% 5%;
+    }
+    .projectTitle{
+        height: 4px;
         text-align: center;
         margin-top: 180px;
         font-size:100%;
