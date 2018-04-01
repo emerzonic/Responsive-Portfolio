@@ -276,7 +276,7 @@ button:hover{
 
 .projectTitle{          
     width: 100%;
-    height: 30px;
+    height: 60px;
     background: var(--main-theme-color); 
     padding-top: 15px;
     padding-bottom: 15px;
